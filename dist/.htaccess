@@ -1,0 +1,4 @@
+# 365 day
+<FilesMatch "\.(ico|jpg|png|js|css|ttf|webp)$">
+	Header set Cache-Control "max-age=31536000"
+</FilesMatch>
