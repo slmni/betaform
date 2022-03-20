@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Betaform, بتافرم">
+	<meta name="author" content="Mohammad amin Salmani">
+	<meta name="description" content="بررسی تحلیلی اسلامی فضای رنگین مجازی">
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://betaform.ir/" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>بتافرم</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	
+	<link rel="preload" href="css/styles.css?v6" as="style">
+	<link rel="preload" href="js/scripts.js" as="script">
+	
+	<link rel="stylesheet" href="css/styles.css?v5">
+</head>
+
+<body>
+<div class="relative overflow-hidden bg-gradient-to-br from-black via-gray-700 to-gray-800">
+  <div class="max-w-7xl mx-auto">
+    <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <div x-data="{ isOpen: false }">
+        <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+          <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="#">
+                  <span class="sr-only">Betaform</span>
+                  <img class="h-16 w-auto sm:h-10" src="./img/logo.webp" alt="Logo">
+                </a>
+                <div class="-mr-2 flex items-center md:hidden">
+                  <button type="button" @click="isOpen = !isOpen" class="border rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-100 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block md:mr-10 md:pl-4 md:space-x-8">
+              <button class="font-medium text-gray-300 hover:text-gray-100 videoLink">کلیپ</button>
+              <button class="font-medium text-gray-300 hover:text-gray-100"></button>
+              <button class="font-medium text-gray-300 hover:text-gray-100 video2Link">مصاحبه</button>
+              <button class="font-medium text-gray-300 hover:text-gray-100 usersLink">اعضا</button>
+            </div>
+          </nav>
+        </div>
+		
+        <div x-show="isOpen"
+    x-transition:enter="duration-150 ease-out"
+    x-transition:enter-start="opacity-0 scale-95"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="duration-100 ease-in"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-95"
+	class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+          <div class="rounded-lg shadow-md ring-1 ring-black ring-opacity-5 overflow-hidden bg-gradient-to-bl from-gray-700 to-gray-600">
+            <div class="px-5 pt-4 flex items-center justify-between">
+              <div>
+                <img class="h-16 w-auto" src="./img/logo.webp" alt="Logo">
+              </div>
+              <div class="-ml-2">
+                <button id="closeButton" type="button" @click="isOpen = !isOpen" class="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-100 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <span class="sr-only">Close main menu</span>
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+				    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+				  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 pt-2 pb-3 space-y-1">
+              <button class="w-full text-right block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-gray-100 hover:bg-gray-500 closeMenu videoLink">کلیپ</button>
+              <button class="w-full text-right block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-gray-100 hover:bg-gray-500 closeMenu video2Link">مصاحبه</button>
+              <button class="w-full text-right block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-gray-100 hover:bg-gray-500 closeMenu usersLink">اعضا</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="sm:text-center lg:text-right">
+          <h1 class="text-4xl tracking-tight text-gray-100 font-extrabold sm:text-5xl md:text-6xl">
+            <span class="block xl:inline pb-5">تیم حرفه ای</span>
+            <span class="block text-red-600 xl:inline">بتافرم</span>
+          </h1>
+          <h2 class="mt-3 text-base text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+           بررسی تحلیلی اسلامی فضای رنگین مجازی
+          </h2>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="transition transform lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2 p-2">
+    <img class="h-56 w-full object-cover rounded-xl shadow sm:h-72 md:h-96 lg:w-full lg:h-full" src="./img/cover.webp" alt="Cover">
+  </div>
+</div>
+
+	
+	<div id="video" class="grid grid-cols-1 lg:grid-cols-2 p-2 bg-gradient-to-bl from-gray-900 via-gray-700 to-gray-900">
+		<div>
+			<div class="m-2 h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/mWuAR/vt/frame?recom=none" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+		</div>
+		<div class="p-2 py-5 text-white text-2xl flex items-center justify-center">
+			<h2>
+				<span>زندگی <span class="text-blue-500">زیباست</span> ...</span><br />
+				<span>زندگی زیباییش رو مدیون <span class="text-green-500">خداست</span> ...</span>
+			</h2>
+		</div>
+	</div>
+	<div id="video2" class="grid grid-cols-1 lg:grid-cols-2 p-2 bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900">
+		<div class="flex items-center p-1 py-5 text-white text-2xl justify-center">
+			<h2>
+				<span>بنشینیم پای کلام اهل فن، که در فضای مجازی <span class="text-yellow-500">چه کنیم؟</span></span><br />
+				<span>کجا ها <span class="text-green-500">باشیم؟</span> کجا ها <span class="text-red-500">نباشیم؟</span></span>
+			</h2>
+		</div>
+		<div class="row-end-2 lg:row-end-auto">
+			<div class="m-2 h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/G6n1E/vt/frame?recom=none" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+		</div>
+	</div>
+	<div id="video3" class="grid grid-cols-1 lg:grid-cols-2 p-2 bg-gradient-to-bl from-gray-900 via-gray-700 to-gray-900">
+		<div>
+			<div class="m-2 h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/udYm6/vt/frame?recom=none" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+		</div>
+		<div class="p-2 py-5 text-white text-2xl flex items-center justify-center">
+			<h2>
+				<span>پای این <span class="text-blue-500">پرچم</span> میمانیم ...</span>
+			</h2>
+		</div>
+	</div>
+	
+	<div id="users" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-2 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
+		<div class="flex items-center bg-gray-500 rounded-lg p-1 m-1 bg-gradient-to-tl from-gray-900 to-gray-700 text-white text-xl hover:to-red-800">
+			<img src="./img/1.png" class="w-32 rounded-lg m-1" alt="user-avatar" />
+			<div>
+				<p class="mb-2">حمید رضا دانش</p>
+				<p><i class="fa fa-users"></i> مدیریت گروه</p>
+				<p><i class="fa fa-desktop"></i> طراحی محتوای کلیپ</p>
+				<p><i class="fa fa-palette"></i> طراحی لوگو</p>
+			</div>
+		</div>
+		<div class="flex items-center bg-gray-500 rounded-lg p-1 m-1 bg-gradient-to-tl from-gray-900 to-gray-700 text-white text-xl hover:to-red-800">
+			<img src="./img/2.png" class="w-32 rounded-lg m-1" alt="user-avatar" />
+			<div>
+				<p class="mb-2">محمد امین سلمانی</p>
+				<p><i class="fa fa-award"></i> طراحی نام گروه</p>
+				<p><i class="fa fa-code"></i> طراح و برنامه نویس وب</p>
+				<p><i class="fa fa-cloud"></i> راه اندازی وب سایت</p>
+			</div>
+		</div>
+		<div class="flex items-center bg-gray-500 rounded-lg p-1 m-1 bg-gradient-to-tl from-gray-900 to-gray-700 text-white text-xl hover:to-red-800">
+			<img src="./img/3.png" class="w-32 rounded-lg m-1" alt="user-avatar" />
+			<div>
+				<p class="mb-2">حسین رحمتی</p>
+				<p class="text-2xl"><i class="fa fa-align-justify"></i> طراح سوالات مصاحبه</p>
+			</div>
+		</div>
+		<div class="flex items-center bg-gray-500 rounded-lg p-1 m-1 bg-gradient-to-tl from-gray-900 to-gray-700 text-white text-xl hover:to-red-800">
+			<img src="./img/4.png" class="w-32 rounded-lg m-1" alt="user-avatar" />
+			<div>
+				<p class="mb-2">سجاد حاجعلی</p>
+				<p class="text-3xl"><i class="fa fa-film"></i> تدوین کلیپ</p>
+			</div>
+		</div>
+		<div class="flex items-center bg-gray-500 rounded-lg p-1 m-1 bg-gradient-to-tl from-gray-900 to-gray-700 text-white text-xl hover:to-red-800">
+			<img src="./img/5.png" class="w-32 rounded-lg m-1" alt="user-avatar" />
+			<div>
+				<p class="mb-2">یاسر آقایی</p>
+				<p class="text-3xl"><i class="fa fa-glasses"></i> تدوین مصاحبه</p>
+			</div>
+		</div>
+		<div class="flex items-center bg-gray-500 rounded-lg p-1 m-1 bg-gradient-to-tl from-gray-900 to-gray-700 text-white text-xl hover:to-red-800">
+			<img src="./img/6.png" class="w-32 rounded-lg m-1" alt="user-avatar" />
+			<div>
+				<p class="mb-2">امیر محمد کوشکی</p>
+				<p class="text-2xl"><i class="fa fa-camera"></i> فیلم بردار</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex items-center justify-center p-2 bg-gradient-to-b from-gray-900 to-gray-700">
+		<p class="m-5 text-gray-600 text-3xl">گروه بتافرم</p>
+	</div>
+	
+    <div class="fixed top-0 left-0 w-full h-full z-50 hidden" id="loading">
+        <div class="flex items-center justify-center w-full h-full bg-gray-600">
+            <div class="p-10 border-8 border-gray-800 border-t-0 border-b-0 animate-spin rounded-full">
+            </div>
+        </div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js" defer></script>
+	<script src="js/scripts.js?v5"></script>
+</body>
+
+</html>
